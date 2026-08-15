@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { useVaults } from './hooks/useVaults'
 import { VaultTable, type ChainFilter, type SortKey } from './components/VaultTable'
 import { StatCard } from './components/StatCard'
+import { CarbonAd } from './components/CarbonAd'
 import { formatApy, formatUsd } from './lib/format'
 
 export default function App() {
@@ -87,6 +88,9 @@ export default function App() {
           sub="Across all listed USDC vaults"
         />
       </div>
+
+      {/* Carbon Ads — remove or reposition as needed */}
+      <CarbonAd />
 
       {/* Chain filter */}
       <div className="mb-4 flex items-center gap-2">

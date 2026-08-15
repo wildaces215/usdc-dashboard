@@ -21,3 +21,65 @@ body {
 #root {
   min-height: 100vh;
 }
+
+/* ── Carbon Ads dark-theme overrides ─────────────────────────────────────── */
+/* Carbon Ads injects its own light-themed markup inside #_carbonads_js.  */
+/* These overrides adapt it to match the dashboard's dark aesthetic.       */
+
+#carbonads,
+#carbonads * {
+  box-sizing: border-box;
+}
+
+#carbonads {
+  display: block;
+  max-width: 728px;
+  border: 1px solid var(--color-zinc-800, #27272a);
+  border-radius: 12px;
+  background: rgba(24, 24, 27, 0.5);
+  padding: 12px 16px;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+}
+
+#carbonads .carbon-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+#carbonads .carbon-img {
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+#carbonads .carbon-img img {
+  width: 100px;
+  height: auto;
+  border-radius: 6px;
+}
+
+#carbonads .carbon-text {
+  color: #d4d4d8;
+  font-size: 13px;
+  line-height: 1.4;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 4px;
+}
+
+#carbonads .carbon-text:hover {
+  color: #f4f4f5;
+}
+
+#carbonads .carbon-poweredby {
+  color: #71717a;
+  font-size: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+#carbonads .carbon-poweredby:hover {
+  color: #a1a1aa;
+}
